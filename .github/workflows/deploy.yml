@@ -9,11 +9,11 @@ jobs:
       - name: Git Checkout
         uses: actions/checkout@v2
 
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v3.8.1
+
       - name: Setup Python
         uses: actions/setup-python@v3.1.4
-
-      - name: Install Window Build Tools
-        run: npm i --global windows-build-tools
 
       - name: Install dependencies
         run: npm i
