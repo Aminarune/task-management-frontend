@@ -10,10 +10,10 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Install dependencies
-        run: yarn
+        run: npm i
 
       - name: Build React App
-        run: yarn build
+        run: npm run build
         env:
           HTTPS: 'true'
           REACT_APP_BASE_URL: ${{ secrets.REACT_APP_BASE_URL }}
