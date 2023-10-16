@@ -13,7 +13,7 @@ jobs:
         uses: actions/setup-python@v3.1.4
 
       - name: Update node-gyp
-        uses: npm explore npm/node_modules/@npmcli/run-script -g -- npm_config_global=false npm install node-gyp@latest
+        run: npm explore npm/node_modules/@npmcli/run-script -g -- npm_config_global=false npm install node-gyp@latest
 
       - name: Check node version
         run: node -v
